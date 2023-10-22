@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="ion-text-center">
+    <ion-title size="large">Regístrate</ion-title>
+  </div>
+
+  <form>
+    <ion-item>
+      <ion-label position="stacked">Correo Electrónico</ion-label>
+      <ion-input type="email" #email placeholder="Tu correo electrónico"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Contraseña</ion-label>
+      <ion-input type="password" #password placeholder="Tu contraseña"></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" color="primary" type="submit" (click)="onSignup()">Registrarse</ion-button>
+  </form>
+</ion-content>
